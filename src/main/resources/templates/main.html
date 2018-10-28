@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        This is my home
+        <br/>
+        Name: <th:block th:text="${user.name}"/>
+        <br/>
+        Age: <span th:text="${user.age}" th:remove="tag">title</span>
+        <br/>
+        <th:block form:field="${user.name}"/>
+        <br/>
+        <th:block form:field="${user.age}"/>
+    </body>
+</html>
